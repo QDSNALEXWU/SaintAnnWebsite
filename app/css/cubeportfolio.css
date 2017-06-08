@@ -2571,19 +2571,36 @@
   top: 0;
   bottom: 0;
   font: 400 13px/30px "Open Sans", sans-serif;
-  height: 30px; }
+  height: 30px; 
+  visibility: hidden ;
+  
+}
 
 @media only screen and (max-width: 768px) {
   .cbp-popup-singlePage-counter {
-    right: 3%; }
+    right: 3%; 
+
+    }
  }
 
-.cbp-popup-next, .cbp-popup-prev, .cbp-popup-close {
+.cbp-popup-next, .cbp-popup-prev {
   padding: 0;
   border: medium none;
   position: absolute;
   cursor: pointer;
-  outline: 0; }
+  outline: 0; 
+  visibility: hidden ;
+
+}
+
+.cbp-popup-close {
+  padding: 0;
+  border: medium none;
+  position: absolute;
+  cursor: pointer;
+  outline: 0;
+  right: 0px ;
+}
 
 .cbp-popup-lightbox .cbp-popup-prev, .cbp-popup-lightbox .cbp-popup-next, .cbp-popup-lightbox .cbp-popup-close {
   visibility: hidden; }

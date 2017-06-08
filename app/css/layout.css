@@ -41,10 +41,6 @@ CSS TABLE OF CONTENTS:
 
 ---------------------------------------------------------*/
 
-
-
-
-
 /* ==============================================
 Preload
 =============================================== */
@@ -106,6 +102,12 @@ footer {
 	padding: 50px 0px;
 	color: #fff;
 }
+
+footer.cause_page {
+	background: white;
+	color: black ;
+}
+
 
 section#service-detail{
 	padding:0px;
@@ -180,6 +182,14 @@ h1.logo a:link {
 .subtitle h2, .subtitle.white h2, .white.subtitle-detail h2, .subtitle-detail.white h2 {
 	font-weight: 900;
 }
+
+.subtitle h1, .subtitle.white h1, .white.subtitle-detail h1, .subtitle-detail.white h1 {
+	font-weight: 900;
+	font-size: 3.5vw ; 
+	position: absolute;
+	top: -3vw;
+}
+
 .subtitle.white p, .white.subtitle-detail p, .subtitle.white cite, .white.subtitle-detail cite, .subtitle-detail.white p, .subtitle-detail.white cite {
 	color: #fff;
 }
@@ -355,6 +365,7 @@ a.slider-link:hover {
 	opacity: 0 !important;
 }
 
+
 .parallax-background {
 	background-position: center center;
 	background-repeat: repeat-y;
@@ -363,6 +374,7 @@ a.slider-link:hover {
 	position: relative;
 	width: 100%;
 }
+
 
 .slider-cont.parallax-background {
 	background-repeat: no-repeat !important;
@@ -383,15 +395,15 @@ a.slider-link:hover {
 }
 
 .bg1 {
-	background: url(../img/slider/hand1.jpg);
+	background: url(../img/1.jpg);
 }
 
 .bg2 {
-	background: url(../img/slider/hand2.jpg);
+	background: url(../img/2.jpg);
 }
 
 .bg3 {
-	background: url(../img/slider/hand4.jpg);
+	background: url(../img/3.jpg);
 }
 
 .testimonial {
@@ -406,11 +418,10 @@ a.slider-link:hover {
 	width:100%;
 	z-index:9977;
 }
+
 #main-slider .owl-pagination{
+
 }
-
-
-
 
 
 
@@ -428,6 +439,15 @@ Title section
 .section-title {
     margin-bottom: 70px;
 	text-align:center;
+}
+
+
+.section-title img{
+	height: 30% ;
+	width: 30% ;
+	display: block;
+    margin: 0 auto;
+
 }
 
 .title-section i {
@@ -483,10 +503,6 @@ Title section
 	margin-bottom: 0px;
 	padding: 0px 10px;
 }
-
-
-
-
 
 
 /* ==============================================
@@ -612,9 +628,6 @@ Parallax
 }
 
 
-
-
-
 /* ==============================================
 Services
 =============================================== */
@@ -642,7 +655,6 @@ div.service .cbp-item-wrapper p{
 }
 	
 	
-
 @media screen and (max-width: 600px) {
 	.service {
 		width: 50%;
@@ -683,8 +695,10 @@ div.service .cbp-item-wrapper p{
 #services .service .service-description:hover {
 	cursor: pointer;
 }
+
 .service-title{
 }
+
 .service-title h2{
 	margin-bottom:-10px;
 }
@@ -735,11 +749,6 @@ ul.list li:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
-
-
 /* ==============================================
 Portfolio
 =============================================== */
@@ -748,8 +757,11 @@ section#works {
 }
 
 section#detail {
-	padding: 80px 0px;
+	padding-top: 50px ;
+	height: 200px ;
+	margin: 0 ;
 }
+
 .th-detail {
 	left: 0;
     margin: 0 auto;
@@ -760,11 +772,13 @@ section#detail {
 	text-align:center;
     transition: all 0.3s ease 0s;
 }
+
 .cbp-caption-activeWrap:hover .th-detail {
     margin-top: 35%;
     opacity: 1;
    /* top: 50% !important;*/
 }
+
 .cbp-l-grid-projects-title{
 	font-family:'Montserrat', sans-serif;
 	color:#fff;
@@ -772,6 +786,7 @@ section#detail {
 	padding:10px 0px;
 	margin-bottom:10px;
 }
+
 .cbp-l-caption-buttonLeft, .cbp-l-caption-buttonRight{
 	text-transform:uppercase;
 	-moz-border-radius:2px;
@@ -881,7 +896,7 @@ a.link-btn span {
 	transition: transform 0.3s ease 0s;
 }
 
- ul.color-white li{
+ul.color-white li{
 	color:#fff !important;
 }
 
@@ -893,7 +908,6 @@ a.link-btn span {
 	transition: transform 0.3s ease 0s;
 	font-weight:700;
 }
-
 
 a.link-btn.big {
 	top: 15px;
@@ -927,12 +941,6 @@ a.link-btn:hover span, a.link-btn:focus span {
 a.link-btn:hover:before, a.link-btn:focus:before {
 	transform: translateX(0%);
 }
-
-
-
-
-
-
 
 
 /* ==============================================
@@ -998,7 +1006,7 @@ div.about {
 	padding: 0px 20px;
 }
 div.about p {
-	font-size: 12px;
+	font-size: 1.5vw;
 	margin-bottom: 0px;
 	font-family:'Montserrat', sans-serif;
 }
@@ -1160,10 +1168,6 @@ section#map.dark {
 }
 
 
-
-
-
-
 /* ==============================================
 Accordions
 =============================================== */
@@ -1219,11 +1223,6 @@ ul.accordion li:first-child a {
 	margin-bottom: 0px;
     color: #000;
 }
-
-
-
-
-
 
 /* ==============================================
 Tabs
@@ -1391,7 +1390,13 @@ i.text-primary {
 }
 
 .blog-item-preview p.white {
-    padding: 0 10px;
+    padding: 20px 10px;
+
+}
+
+p.white {
+	width: 80% ;
+	margin: 0 auto ;
 }
 
 .blog-item-preview .link_btn {
@@ -1786,9 +1791,11 @@ Media Query
 	.cbp-l-filters-alignRight .cbp-filter-item, .cbp-l-filters-alignCenter .cbp-filter-item{
 		margin:10px 5px 0px;
 	}
+	
 	.cbp-caption-activeWrap:hover .th-detail{
 		margin-top:120px;
 	}
+
 	.animated {
 		visibility: visible !important;
 		-webkit-animation: none !important;
@@ -1842,22 +1849,28 @@ Media Query
 
 	
 }
+
 @media only screen and (min-width: 40.063em) {
 	.portfolio-item {
 		width: 25%;
 	}
 }
+
 /* tablets */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	
 	.portfolio-item {
 		width: 25%;
 	}
+
 	.cbp-caption-activeWrap:hover .th-detail{
 		/*margin-top:120px;*/
 	}
+
 	.slider-cont.parallax-background, .parallax{
 		background-position:center center;
 	}
+
 	.parallax{	
 		margin-bottom:0px;
 		min-height: 420px;
@@ -1871,8 +1884,6 @@ Media Query
 	}
 
 }
-
-
 
 /* Reveal-Model */
 .reveal-modal-bg {
@@ -2052,4 +2063,9 @@ ul.service-tab li.deneme:hover{
 
 ul.pb li{
 	padding:5px 0px;
+}
+
+.cbp-item { 	
+ 	width: 20px;
+	
 }

@@ -1,15 +1,7 @@
 /*
-* Theme Name: Kulebe
-* File name: custom.js
-* Theme URL: http://klbtheme.com/kulebe
-* Description: Kulebe - Multipurpose Nonprofit Theme
-* Author: KlbTheme
-* Author URL: http://themeforest.net/user/klbtheme
-* Support: https://sinanisik.ticksy.com/
-* Version: 1.0
-*/
-
-
+ *  File name: custom.js
+ *  For saint ann foundation website 
+ */
 
 /* ==============================================
 	Start window load function strict mode
@@ -28,8 +20,6 @@ $(window).on("load", function () {
 			scrollTop: $('#' + urlHash).offset().top
 		}, 900);
 });
-
-
 
 /* ==============================================
 	Start ready function strict mode
@@ -533,13 +523,13 @@ var ua = navigator.userAgent,
 		gridAdjustment: 'responsive',
 		mediaQueries: [{
 			width: 1600,
-			cols: 4
+			cols: 5
 		},{
 			width: 1200,
-			cols: 4
+			cols: 5
 		}, {
 			width: 800,
-			cols: 3
+			cols: 2
 		}, {
 			width: 500,
 			cols: 2
@@ -663,11 +653,6 @@ var ua = navigator.userAgent,
 /* END CUBEPORTFOLIO SETINGS */
 
 
-
-
-
-
-
 /* ==============================================
 	Main Slider Full Height
 =============================================== */
@@ -693,8 +678,6 @@ $(window).resize(function() {
 		$('#slider .slider-cont-single').height( windowHeight );
 	}
 });
-
-
 
 
 /* ==============================================

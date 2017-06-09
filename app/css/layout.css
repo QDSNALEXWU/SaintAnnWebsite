@@ -758,8 +758,8 @@ section#works {
 
 section#detail {
 	padding-top: 50px ;
-	height: 200px ;
-	margin: 0 ;
+	position: fixed; 
+	margin-left: 5vw ;
 }
 
 .th-detail {

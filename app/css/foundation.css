@@ -1843,7 +1843,8 @@ button, .button {
   padding-left: 2rem;
   font-size: 1rem;
   background-color: #FFD200;
-  color: #2B2D42;
+  /*color: #2B2D42;*/
+  color: black;
   transition: background-color 300ms ease-out;
 }
 button:hover, button:focus, .button:hover, .button:focus {

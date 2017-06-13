@@ -164,7 +164,7 @@
 .cbp-l-caption-buttonLeft, .cbp-l-caption-buttonRight {
   /* @editable properties */
   background-color: #3288C4;
-  color: #2B2D42;
+  color: black;
   display: inline-block;
   font: 600 12px/30px "Open Sans", sans-serif;
   width: 90px;
@@ -533,7 +533,7 @@
   /* @editable properties */
   background: none repeat scroll 0 0 #626161;
   border-radius: 3px;
-  color: #2B2D42;
+  color: black;
   font: 400 11px/18px "Open Sans", sans-serif;
   font-weight:700;
   margin: 0 auto;
@@ -2551,7 +2551,9 @@
   z-index: 9990;
   /* @editable properties */
   height: 67px;
-  background-color: #172A3A; }
+  /*background-color: #172A3A;*/ 
+  background-color: black; 
+  }
 
 .cbp-popup-singlePage .cbp-popup-navigation {
   position: relative;
@@ -3326,7 +3328,7 @@
   margin: 0 4px;
   display: inline-block;
   cursor: pointer;
-  background: #2B2D42;
+  background: black;
   -webkit-transition: background 0.5s;
   transition: background 0.5s; }
 
